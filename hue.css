@@ -1,0 +1,43 @@
+::selection {
+  background: mediumspringgreen;
+  color: indigo;
+}
+
+:root {
+  background: darkviolet;
+  background-image: linear-gradient(blueviolet 20%, darkviolet 50%);
+  color: seashell;
+}
+
+:any-link {
+  color: inherit;
+  background: transparent;
+}
+
+:focus {
+  outline-color: #ec0;
+}
+
+:any-link:active {
+  color: mistyrose;
+}
+
+p {
+  background-image: conic-gradient(darkviolet 20%, blueviolet 80%);
+}
+
+@media (orientation: landscape) {
+  b {
+    text-shadow:
+      0 1ch 0 violet,
+      0 -1ch 0 palevioletred;
+  }
+}
+
+@media (orientation: portrait) {
+ b {
+  text-shadow:
+    1ch 0 0 violet,
+    -1ch 0 0 palevioletred;
+} 
+}
